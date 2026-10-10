@@ -58,22 +58,16 @@ export class DemoPage {
     ]);
 
     await newPage.waitForLoadState('load');
-
     const appUrl = newPage.url();
     console.log('URL of New Page: ' + appUrl);
-
     await newPage.bringToFront();
     await newPage.locator('input, textarea').first().fill('Test');
-
     await previousPage.bringToFront();
     await previousPage.locator('button').first().click();
-
     await newPage.bringToFront();
     await newPage.locator('button').first().click();
-
     await previousPage.bringToFront();
     await previousPage.locator('button').first().click();
-
     console.log('Current URL: ' + previousPage.url());
   }
 }
