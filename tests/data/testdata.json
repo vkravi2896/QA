@@ -1,0 +1,8 @@
+{
+  "testData": {
+    "fullName" : "Raj Kumar",
+    "email": "ravi123@gmail.com",
+    "currentAddress":"new Address",
+    "permanentAddress": "old Address"
+  }
+}
